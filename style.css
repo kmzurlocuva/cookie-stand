@@ -1,0 +1,13 @@
+body {
+  color: #FFF2AA;
+}
+
+data {
+  font-family: 'Fira Sans', sans-serif;
+  font-color: #34508F;
+}
+
+h1, p {
+  font-family: 'Noto Serif', serif;
+  font-color: #22335C;
+}
