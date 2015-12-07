@@ -4,18 +4,45 @@ body {
   background-color: #FFF2AA;
 }
 
-data {
-  font-family: "Fira Sans", sans-serif;
-  font-color: #34508F;
-  font-size: 16px;
+.body {
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+  text-align: center;
 }
 
-h1, p {
-  font-family: "Noto Serif", serif;
-  font-color: #22335C;
+data {
+  font-family: 'Fira Sans', sans-serif;
+  color: #34508F;
+  font-size: 16px;
+
+}
+
+h1 {
+  font-family: 'Noto Serif', serif;
+  color: #22335C;
+  font-size: 32px;
+  background-color: #FA9F61;
+  text-align: center;
 }
 
 h2 {
-  font-family: "noto Serif", serif;
-  font-color: #34508F;
+  font-family: 'Noto Serif', serif;
+  color: #34508F;
+  font-size: 24px;
+  text-align: center;
+
+}
+
+section {
+  font-family: 'Fira Sans', sans-serif;
+  color: #34508F;
+  font-size: 16px;
+  background-color: #FA9F61;
+}
+
+p {
+  font-family: 'Noto Serif', serif;
+  color: #22335C;
+  font-size: 16px;
 }
