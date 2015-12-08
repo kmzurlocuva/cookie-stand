@@ -1,16 +1,5 @@
 
-function location(maxCustomersPerHr, minCustomersPerHr, avgCookiesPerCustomer, cookiesPerHourArr, dailyTotal, name) {
-  this.maxCustomersPerHr = maxCustomersPerHr
-  this.minCustomersPerHr = minCustomersPerHr;
-  this.avgCookiesPerCustomer = avgCookiesPerCustomer;
-  this.cookiesPerHourArr = cookiesPerHourArr;
-  this.dailyTotal = dailyTotal;
-  this.name = name;
 
-  var pikePlace = new location(88, 17, 5.2, [], 0, "Pike Place")
-  }
-
-}
   var hours = ['10am', '11am', 'noon', '1pm', '2pm', '3pm', '4pm', '5pm'];
   var pikePlace = {
     minCustomersPerHr: 88,
