@@ -7,7 +7,7 @@ function Location(maxCustomersPerHr, minCustomersPerHr, avgCookiesPerCustomer, c
   this.name = name;
   shops.push(this);
 }
-  var hours = ['10am', '11am', 'noon', '1pm', '2pm', '3pm', '4pm', '5pm'];
+  var hours = ['Total','10am', '11am', 'noon', '1pm', '2pm', '3pm', '4pm', '5pm'];
   var shops = [];
   var pikePlace = new Location(88, 17, 5.2, [], 0, "Pike Place");
   var seaTacAirport = new Location(44, 6, 1.2, [], 0, "SeaTac Airport");
@@ -24,11 +24,11 @@ function Location(maxCustomersPerHr, minCustomersPerHr, avgCookiesPerCustomer, c
 
   Location.prototype.generateHourly = function() {
 
-    for (var i = 0; i < hours.length; i++) {
+    for (var i = 1; i < hours.length; i++) {
       var cookiesNeededPerHour = Math.floor(this.avgCookiesPerCustomer * this.randCustomerPerHr(this.minCustomersPerHr,this.maxCustomersPerHr));
       this.cookiesPerHourArr.push(cookiesNeededPerHour);
       this.dailyTotal += cookiesNeededPerHour;
-      // console.log(cookiesNeededPerHour)
+
     }
 },
 
@@ -41,8 +41,6 @@ function Location(maxCustomersPerHr, minCustomersPerHr, avgCookiesPerCustomer, c
     trEl.appendChild(document.createTextNode(this.name + " " + this.dailyTotal));
 
     var section = document.getElementById("data");
-    // var header = document.getElementById("th");
-    // console.log(section);
     section.appendChild(trEl);
       for (var i = 0; i < hours.length; i++) {
         var tdEl = document.createElement('td');
@@ -65,6 +63,7 @@ function header(){
   header.appendChild(trEl);
 
   for (var i = 0; i < hours.length; i++) {
+    var thEl = document. createElement('th')
     thEl.textContent = hours[i];
     trEl.appendChild(thEl);
     header.appendChild(trEl);

@@ -39,10 +39,15 @@ section {
   color: #34508F;
   font-size: 16px;
   background-color: #FA9F61;
+  padding: 10px;
+  margin: 10px;
+  outline-width: 2px;
+  outline-style: solid;
+
 }
 
 p {
   font-family: 'Noto Serif', serif;
-  color: #22335C;
+  color: #34508F;
   font-size: 16px;
 }
