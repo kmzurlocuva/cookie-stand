@@ -36,29 +36,32 @@ function Location(maxCustomersPerHr, minCustomersPerHr, avgCookiesPerCustomer, c
   Location.prototype.render = function() {
     this.generateHourly();
     var trEl = document.createElement('tr');
+    trEl.appendChild(document.createTextNode(this.name));
+    // trEl.appendChild(document.createTextNode(this.dailyTotal));
 
-
-    trEl.appendChild(document.createTextNode(this.name + " " + this.dailyTotal));
+    // this.dailyTotal));
 
     var section = document.getElementById("data");
     section.appendChild(trEl);
+    var tdEl = document.createElement('td');
+    // console.log(this.cookiesNeededPerHour);
+    tdEl.textContent = this.dailyTotal;
+    trEl.appendChild(tdEl);
+
       for (var i = 0; i < hours.length; i++) {
         var tdEl = document.createElement('td');
         // console.log(this.cookiesNeededPerHour);
         tdEl.textContent = this.cookiesPerHourArr[i];
         trEl.appendChild(tdEl);
     };
-
-
 }
 function header(){
   console.log("make a header here:");
-  // var header = document.getElementById('header');
   var header = document.getElementById('data');
   var trEl = document.createElement('table');
   var thEl = document.createElement('th');
   thEl.textContent = "Location";
-  // thEl.appendChild(document.createTextNode(thEl));
+
   trEl.appendChild(thEl);
   header.appendChild(trEl);
 
