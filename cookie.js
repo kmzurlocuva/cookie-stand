@@ -1,22 +1,40 @@
-function Location(maxCustomersPerHr, minCustomersPerHr, avgCookiesPerCustomer, cookiesPerHourArr, dailyTotal, name) {
+function Location(maxCustomersPerHr, minCustomersPerHr, avgCookiesPerCustomer, name) {
   this.maxCustomersPerHr = maxCustomersPerHr
   this.minCustomersPerHr = minCustomersPerHr;
   this.avgCookiesPerCustomer = avgCookiesPerCustomer;
-  this.cookiesPerHourArr = cookiesPerHourArr;
-  this.dailyTotal = dailyTotal;
+  this.cookiesPerHourArr = [];
+  this.dailyTotal = 0;
   this.name = name;
   shops.push(this);
 }
   var hours = ['Total','10am', '11am', 'noon', '1pm', '2pm', '3pm', '4pm', '5pm'];
   var shops = [];
-  var pikePlace = new Location(88, 17, 5.2, [], 0, "Pike Place");
-  var seaTacAirport = new Location(44, 6, 1.2, [], 0, "SeaTac Airport");
-  var southcenterMall = new Location(38, 11, 1.9, [], 0, "Southccenter Mall");
-  var bellevueSquare = new Location(48, 20, 3.3, [], 0, "Bellevue Square");
-  var alki = new Location(24, 3, 2.6, [], 0, "Alki");
+  var pikePlace = new Location(88, 17, 5.2, "Pike Place");
+  var seaTacAirport = new Location(44, 6, 1.2, "SeaTac Airport");
+  var southcenterMall = new Location(38, 11, 1.9, "Southccenter Mall");
+  var bellevueSquare = new Location(48, 20, 3.3, "Bellevue Square");
+  var alki = new Location(24, 3, 2.6, "Alki");
 
-var section = document.getElementById("user-form");
 
+
+
+var userForm = document.getElementById("user-form");
+
+function handleFormSubmit(event) {
+  event.preventDefault();
+  console.log(event);
+  var userLocation = event.target.userLocation.value;
+  var userMax = event.target.maxCustomersPerHr.value;
+  var userMin = event.target.minCustomersPerHr.value;
+  var userAvg = event.target.avgCookiesPerCustomer.value;
+
+
+
+var mystery = new Location(userMax, userMin, userAvg, userLocation);
+mystery.render();
+
+}
+userForm.addEventListener('submit', handleFormSubmit);
 
   Location.prototype.randCustomerPerHr =  function(min,max) {
     return Math.floor(Math.random() * (max - min) + min);
@@ -38,9 +56,6 @@ var section = document.getElementById("user-form");
     this.generateHourly();
     var trEl = document.createElement('tr');
     trEl.appendChild(document.createTextNode(this.name));
-    // trEl.appendChild(document.createTextNode(this.dailyTotal));
-
-    // this.dailyTotal));
 
     var section = document.getElementById("data");
     section.appendChild(trEl);
@@ -57,7 +72,7 @@ var section = document.getElementById("user-form");
     };
 }
 function header(){
-  console.log("make a header here:");
+  // console.log("make a header here:");
   var header = document.getElementById('data');
   var trEl = document.createElement('table');
   var thEl = document.createElement('th');

@@ -13,17 +13,24 @@
     <h1>Pat's Salmon Cookies<p></p>
     <img src="images/salmon.png" alt="Salmon Image" width="250" height "75" align= "center"></h1>
     <h2>***Coming Soon***Pat's Web site is Under Development***</h2>
-    <p>Pat has collected the following data, currently:</p>
+    <p>Pat has collected the following data. Additional data can be added using the fields below:</p>
 
     <form id="user-form">
       <fieldset>
         <legend>New Locations</legend>
-        <label for="Minimum">Minimum # of Cookies per Hour:</label>
-        <input id="minCustomersPerHr" type="text" placeholder="Minimum">
+        <label for="userLocation">New Store Name:</label>
 
-        <label>Maximum # of Cookies per Hour:<input id="maxCustomersPerHr" type="text" placeholder='Maximum'></label>
-        <label>Average Cookies per Customer:<input id="avgCookiesPerCustomer" type="text" placeholder="Average"></label>
-        <input type="submit" name="submit" value="submit" />
+        <input name="userLocation" type="text" placeholder="">
+
+        <label for="Minimum">Minimum # of Cookies per Hour:</label>
+
+        <input name="minCustomersPerHr" type="text" placeholder="Minimum">
+
+        <label>Maximum # of Cookies per Hour:<input name="maxCustomersPerHr" type="text" placeholder='Maximum'></label>
+
+        <label>Average Cookies per Customer:<input name="avgCookiesPerCustomer" type="text" placeholder="Average"></label>
+        <!-- <input type="submit" name="submit" value="submit"> -->
+        <input type="submit" name="submit" value="Submit">
 
       </fieldset>
     </form>
