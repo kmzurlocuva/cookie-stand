@@ -15,6 +15,7 @@ function Location(maxCustomersPerHr, minCustomersPerHr, avgCookiesPerCustomer, c
   var bellevueSquare = new Location(48, 20, 3.3, [], 0, "Bellevue Square");
   var alki = new Location(24, 3, 2.6, [], 0, "Alki");
 
+var section = document.getElementById("user-form");
 
 
   Location.prototype.randCustomerPerHr =  function(min,max) {
