@@ -1,3 +1,6 @@
+  var hours = ['Total','10am', '11am', 'noon', '1pm', '2pm', '3pm', '4pm', '5pm'];
+  var shops = [];
+
 function Location(maxCustomersPerHr, minCustomersPerHr, avgCookiesPerCustomer, name) {
   this.maxCustomersPerHr = maxCustomersPerHr
   this.minCustomersPerHr = minCustomersPerHr;
@@ -7,8 +10,7 @@ function Location(maxCustomersPerHr, minCustomersPerHr, avgCookiesPerCustomer, n
   this.name = name;
   shops.push(this);
 }
-  var hours = ['Total','10am', '11am', 'noon', '1pm', '2pm', '3pm', '4pm', '5pm'];
-  var shops = [];
+
   var pikePlace = new Location(88, 17, 5.2, "Pike Place");
   var seaTacAirport = new Location(44, 6, 1.2, "SeaTac Airport");
   var southcenterMall = new Location(38, 11, 1.9, "Southccenter Mall");
@@ -24,9 +26,9 @@ function handleFormSubmit(event) {
   event.preventDefault();
   console.log(event);
   var userLocation = event.target.userLocation.value;
-  var userMax = event.target.maxCustomersPerHr.value;
-  var userMin = event.target.minCustomersPerHr.value;
-  var userAvg = event.target.avgCookiesPerCustomer.value;
+  var userMax = parseInt(event.target.maxCustomersPerHr.value);
+  var userMin = parseInt(event.target.minCustomersPerHr.value);
+  var userAvg = parseFloat(event.target.avgCookiesPerCustomer.value);
 
 
 
@@ -37,7 +39,7 @@ mystery.render();
 userForm.addEventListener('submit', handleFormSubmit);
 
   Location.prototype.randCustomerPerHr =  function(min,max) {
-    return Math.floor(Math.random() * (max - min) + min);
+    return Math.floor(Math.random() * (max - min) + parseInt(min));
   },
 
 
@@ -53,6 +55,7 @@ userForm.addEventListener('submit', handleFormSubmit);
 
 
   Location.prototype.render = function() {
+    var tblEl = document.getElementById('myTable');
     this.generateHourly();
     var trEl = document.createElement('tr');
     trEl.appendChild(document.createTextNode(this.name));
@@ -69,26 +72,33 @@ userForm.addEventListener('submit', handleFormSubmit);
         // console.log(this.cookiesNeededPerHour);
         tdEl.textContent = this.cookiesPerHourArr[i];
         trEl.appendChild(tdEl);
-    };
-}
+    }
+tblEl.appendChild(trEl);
+
+};
 function header(){
   // console.log("make a header here:");
   var header = document.getElementById('data');
   var trEl = document.createElement('table');
+  trEl.id = 'myTable'
   var thEl = document.createElement('th');
   thEl.textContent = "Location";
 
   trEl.appendChild(thEl);
   header.appendChild(trEl);
 
+
   for (var i = 0; i < hours.length; i++) {
     var thEl = document. createElement('th')
     thEl.textContent = hours[i];
     trEl.appendChild(thEl);
     header.appendChild(trEl);
+
   }
 
+
 }
+
 header();
 
 

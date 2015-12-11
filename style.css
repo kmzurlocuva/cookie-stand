@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #FFF2AA;
+  background-color: white;
 }
 
 .body {
@@ -47,17 +47,27 @@ section {
   border: 2px;
 }
 th, .className {
-  border: 2px solid black;
-  width: 5em;
+  border: .2em solid #22335C;
+  width: 4em;
+  padding: .1em, .2em;
+  font-style: oblique;
 }
 
 td {
-  border: 2px solid black;
-  width: 5em;
+  border: .15em solid #22335C;
+  width: 4em;
+  padding: .1em, .2em;
+  text-align: center;
 }
 
 p {
   font-family: 'Noto Serif', serif;
   color: #34508F;
   font-size: 16px;
+}
+
+form {
+  color: #22335C;
+  border: .15em;
+  padding-bottom: .5em;
 }
