@@ -1,73 +1,120 @@
-body {
-  margin: 0px;
-  padding: 0px;
-  background-color: white;
-}
 
-.body {
-  margin: 0px;
-  padding: 0px;
-  background-color: white;
-  text-align: center;
-}
-
-data {
-  font-family: 'Fira Sans', sans-serif;
-  color: #34508F;
-  font-size: 16px;
-
-}
 
 h1 {
   font-family: 'Noto Serif', serif;
-  color: #22335C;
-  font-size: 32px;
-  background-color: #FA9F61;
+  color: #433C57;
+  font-size: 1em;
   text-align: center;
+  display: inline;
+  margin: 0;
 }
 
 h2 {
   font-family: 'Noto Serif', serif;
-  color: #34508F;
-  font-size: 24px;
+  background-color: #B26012;
+  font-size: 8em;
   text-align: center;
+}
+
+ul, menu, dir {
+  margin:0;
+  padding:0;
+  list-style-type: none;
 
 }
 
-section {
-  font-family: 'Fira Sans', sans-serif;
-  color: #34508F;
-  font-size: 16px;
-  background-color: #FA9F61;
-  padding: 10px;
-  margin-left: 10px;
-  margin-right: 200px;
-  outline-width: 2px;
-  outline-style: solid;
-  border: 2px;
-}
-th, .className {
-  border: .2em solid #22335C;
-  width: 4em;
-  padding: .1em, .2em;
-  font-style: oblique;
+nav {
+  margin:0;
+  list-style-type: none;
 }
 
-td {
-  border: .15em solid #22335C;
-  width: 4em;
-  padding: .1em, .2em;
+
+
+header {
+  background-color: #B26012;
+  padding: 0;
+}
+
+fieldset {
   text-align: center;
 }
 
 p {
-  font-family: 'Noto Serif', serif;
-  color: #34508F;
-  font-size: 16px;
+  font-family: 'Fira Sans', sans-serif;
 }
 
-form {
-  color: #22335C;
-  border: .15em;
-  padding-bottom: .5em;
+.slogan {
+  background-color: #E8E5E2;
+  font-family: 'Fira Sans', sans-serif;
+  list-style-type: none;
+  padding: 3.5em;
+  background-image: url("images/3.jpg");
+  background-repeat:no-repeat;
+  background-position:top;
+  text-align: justify;
+  font-size: 2em;
+  font-style: italic;
+}
+
+.navBar {
+  display:flex;
+  list-style-type:none;
+  background-color: #B26012;
+  padding: .3em, 0;
+  text-align: left;
+  text-align-last: center;
+}
+
+.fish {
+  height: 6em;
+  width: 18em;
+  margin-top: 0em;
+}
+
+.navList {
+  display: inline;
+  list-style-type: none;
+  text-align: left;
+  padding-left: 1em;
+}
+
+.where {
+  background-color: transparent;
+  font-family: 'Fira Sans', sans-serif;
+  list-style-type: none;
+  padding: 3.5em;
+  text-align: center;
+  font-size: 2em;
+  font-style: italic;
+}
+
+
+.shop {
+  background-color: #E8E5E2;
+  font-family: 'Fira Sans', sans-serif;
+  list-style-type: none;
+  padding: 3.5em;
+  text-align: center;
+  font-size: 2em;
+  font-style: italic;
+}
+
+.events {
+  background-color: transparent;
+  font-family: 'Fira Sans', sans-serif;
+  list-style-type: none;
+  padding: 3.5em;
+  text-align: center;
+  font-size: 2em;
+  font-style: italic;
+}
+
+.about {
+  background-color: #E8E5E2;
+  font-family: 'Fira Sans', sans-serif;
+  list-style-type: none;
+  padding: 3.5em;
+  text-align: center;
+  font-size: 2em;
+  font-style: italic;
 }
