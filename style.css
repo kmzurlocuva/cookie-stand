@@ -43,6 +43,14 @@ p {
   font-family: 'Fira Sans', sans-serif;
 }
 
+.threed:hover {
+        box-shadow:
+                3px 3px #B26012,
+                4px 4px #B26012,
+                5px 5px #B26012;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
 .slogan {
   background-color: #E8E5E2;
   font-family: 'Fira Sans', sans-serif;
@@ -54,6 +62,7 @@ p {
   text-align: justify;
   font-size: 2em;
   font-style: italic;
+
 }
 
 .navBar {
@@ -86,6 +95,7 @@ p {
   text-align: center;
   font-size: 2em;
   font-style: italic;
+
 }
 
 
@@ -117,4 +127,10 @@ p {
   text-align: center;
   font-size: 2em;
   font-style: italic;
+}
+
+footer p {
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.5em;
 }
