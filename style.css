@@ -1,19 +1,30 @@
 
 
 h1 {
-  font-family: 'Noto Serif', serif;
-  color: #433C57;
-  font-size: 1em;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 2em;
   text-align: center;
-  display: inline;
   margin: 0;
 }
 
 h2 {
-  font-family: 'Noto Serif', serif;
-  background-color: #B26012;
+  font-family: 'Nothing You Could Do', cursive;
+  /*background-color: #B26012;*/
   font-size: 8em;
+}
+
+h3 {
   text-align: center;
+  font-family: 'Noto Serif', serif;
+}
+
+a:link {
+  color: #B26012;
+  text-decoration: none;
+
+}
+a: hover {
+  color: #B26012;
 }
 
 ul, menu, dir {
@@ -53,7 +64,7 @@ p {
 }
 .slogan {
   background-color: #E8E5E2;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Nothing You Could Do', cursive;
   list-style-type: none;
   padding: 3.5em;
   background-image: url("images/3.jpg");
@@ -66,18 +77,23 @@ p {
 }
 
 .navBar {
-  display:flex;
+  display:inline;
   list-style-type:none;
   background-color: #B26012;
   padding: .3em, 0;
   text-align: left;
-  text-align-last: center;
 }
 
 .fish {
   height: 6em;
   width: 18em;
   margin-top: 0em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: .1em;
+  padding: 0em;
+  padding-bottom: 1em;
 }
 
 .navList {
@@ -88,18 +104,6 @@ p {
 }
 
 .where {
-  background-color: transparent;
-  font-family: 'Fira Sans', sans-serif;
-  list-style-type: none;
-  padding: 3.5em;
-  text-align: center;
-  font-size: 2em;
-  font-style: italic;
-
-}
-
-
-.shop {
   background-color: #E8E5E2;
   font-family: 'Fira Sans', sans-serif;
   list-style-type: none;
@@ -107,6 +111,30 @@ p {
   text-align: center;
   font-size: 2em;
   font-style: italic;
+  position: relative;
+
+}
+.map {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.shop {
+  background-color: transparent;
+  font-family: 'Fira Sans', sans-serif;
+  list-style-type: none;
+  padding: 3.5em;
+  text-align: center;
+  font-size: 2em;
+  font-style: italic;
+  position:relative;
+}
+
+.shirt {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .events {
@@ -117,6 +145,14 @@ p {
   text-align: center;
   font-size: 2em;
   font-style: italic;
+  text-align: center;
+  position: relative;
+}
+
+.fishes {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .about {
@@ -128,6 +164,20 @@ p {
   font-size: 2em;
   font-style: italic;
 }
+
+
+}
+.story {
+  text-align: left;
+  display: inline;
+  font-size: .5em;
+  align-items: flex-end;
+}
+
+.copy {
+  font-size: .5em;
+}
+
 
 footer p {
   text-align: center;
