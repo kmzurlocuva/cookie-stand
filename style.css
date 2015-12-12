@@ -1,0 +1,186 @@
+
+
+h1 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Nothing You Could Do', cursive;
+  /*background-color: #B26012;*/
+  font-size: 8em;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Noto Serif', serif;
+}
+
+a:link {
+  color: #B26012;
+  text-decoration: none;
+
+}
+a: hover {
+  color: #B26012;
+}
+
+ul, menu, dir {
+  margin:0;
+  padding:0;
+  list-style-type: none;
+
+}
+
+nav {
+  margin:0;
+  list-style-type: none;
+}
+
+
+
+header {
+  background-color: #B26012;
+  padding: 0;
+}
+
+fieldset {
+  text-align: center;
+}
+
+p {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.threed:hover {
+        box-shadow:
+                3px 3px #B26012,
+                4px 4px #B26012,
+                5px 5px #B26012;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
+.slogan {
+  background-color: #E8E5E2;
+  font-family: 'Nothing You Could Do', cursive;
+  list-style-type: none;
+  padding: 3.5em;
+  background-image: url("images/3.jpg");
+  background-repeat:no-repeat;
+  background-position:top;
+  text-align: justify;
+  font-size: 2em;
+  font-style: italic;
+
+}
+
+.navBar {
+  display:inline;
+  list-style-type:none;
+  background-color: #B26012;
+  padding: .3em, 0;
+  text-align: left;
+}
+
+.fish {
+  height: 6em;
+  width: 18em;
+  margin-top: 0em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: .1em;
+  padding: 0em;
+  padding-bottom: 1em;
+}
+
+.navList {
+  display: inline;
+  list-style-type: none;
+  text-align: left;
+  padding-left: 1em;
+}
+
+.where {
+  background-color: #E8E5E2;
+  font-family: 'Fira Sans', sans-serif;
+  list-style-type: none;
+  padding: 3.5em;
+  text-align: center;
+  font-size: 2em;
+  font-style: italic;
+  position: relative;
+
+}
+.map {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.shop {
+  background-color: transparent;
+  font-family: 'Fira Sans', sans-serif;
+  list-style-type: none;
+  padding: 3.5em;
+  text-align: center;
+  font-size: 2em;
+  font-style: italic;
+  position:relative;
+}
+
+.shirt {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.events {
+  background-color: transparent;
+  font-family: 'Fira Sans', sans-serif;
+  list-style-type: none;
+  padding: 3.5em;
+  text-align: center;
+  font-size: 2em;
+  font-style: italic;
+  text-align: center;
+  position: relative;
+}
+
+.fishes {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.about {
+  background-color: #E8E5E2;
+  font-family: 'Fira Sans', sans-serif;
+  list-style-type: none;
+  padding: 3.5em;
+  text-align: center;
+  font-size: 2em;
+  font-style: italic;
+}
+
+
+}
+.story {
+  text-align: left;
+  display: inline;
+  font-size: .5em;
+  align-items: flex-end;
+}
+
+.copy {
+  font-size: .5em;
+}
+
+
+footer p {
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.5em;
+}

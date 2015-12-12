@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pat's Cookies' Sales Projections</title>
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="skeleton.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h3>Pat's Internal Business Projections</h3>
+    <img class="fish" src="images/salmon.png" alt="Salmon Image">
+
+    <form id="user-form">
+      <fieldset>
+        <legend><h3>New Locations</h3></legend>
+        <label for="userLocation">New Store Name:</label>
+
+        <input name="userLocation" type="text" placeholder="">
+
+        <label for="Minimum">Minimum # of Cookies per Hour:</label>
+
+        <input name="minCustomersPerHr" type="text" placeholder="Minimum">
+
+        <label>Maximum # of Cookies per Hour:<input name="maxCustomersPerHr" type="text" placeholder='Maximum'></label>
+
+        <label>Average Cookies per Customer:<input name="avgCookiesPerCustomer" type="text" placeholder="Average"></label>
+        <!-- <input type="submit" name="submit" value="submit"> -->
+        <input type="submit" name="submit" value="Submit">
+
+      </fieldset>
+    </form>
+    <section id="data"></section>
+
+
+    <script src="cookie.js"></script>
+  </body>
+</html>
